@@ -1,5 +1,5 @@
 def call (Map config){
-    if (config.branch == 'main'){
+    if (config.branch == 'master'){
         checkout{[
                     $class: 'GitSCM',
                     branches: [[name: config.branch]],
